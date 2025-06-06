@@ -30,12 +30,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['forgot_password'])) {
             $mail->isSMTP();
             $mail->Host = 'smtp.gmail.com';
             $mail->SMTPAuth = true;
-            $mail->Username   = 'pvdawis@gmail.com'; 
-            $mail->Password   = 'jkpz mcif aodd icwk';
+            $mail->Username   = '[email]'; 
+            $mail->Password   = '[password]';
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port = 587;
 
-            $mail->setFrom('pvdawis@gmail.com', 'Peter Victor D. Dawis');
+            $mail->setFrom('[email]', '[sender_name]');
             $mail->addAddress($email);
 
             $mail->isHTML(true);
